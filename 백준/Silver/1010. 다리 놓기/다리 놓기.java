@@ -5,7 +5,6 @@ import java.util.StringTokenizer;
 
 public class Main {
 	
-	//0 초과 30 미만(1~29)
 	public static int[][] dp = new int[30][30];
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {

@@ -58,7 +58,7 @@ public class Main {
 		}
 		
 		if(flag) {
-			//오름차순으로
+			//오름차순으로 정렬
 			Collections.sort(res);
 			for(int r : res) {
 				System.out.println(r);

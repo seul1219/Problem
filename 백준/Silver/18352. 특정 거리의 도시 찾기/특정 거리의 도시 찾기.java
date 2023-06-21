@@ -25,7 +25,8 @@ public class Main {
 		for(int i=0; i<N+1; i++) {
 			list[i] = new ArrayList<>();
 		}
-		
+
+		//단방향
 		for(int i=0; i<M; i++) {
 			StringTokenizer st2 = new StringTokenizer(br.readLine());
 			int A = Integer.parseInt(st2.nextToken());

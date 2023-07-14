@@ -49,7 +49,7 @@ import java.io.*;
              res += 4;
 
            } else {
-
+ 
              res += 3;
 
            }

@@ -15,5 +15,5 @@ public class Main {
 		System.out.println(A.add(B));
 		System.out.println(A.subtract(B));
 		System.out.println(A.multiply(B));
-	}
+	}  
 }

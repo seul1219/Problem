@@ -4,10 +4,10 @@ import java.io.InputStreamReader;
 import java.math.BigInteger;
 
 public class Main {
-
+ 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		 
 		BigInteger A = new BigInteger(br.readLine());
 		BigInteger B = new BigInteger(br.readLine());
@@ -17,3 +17,4 @@ public class Main {
 		System.out.println(A.multiply(B));
 	}  
 }
+ 

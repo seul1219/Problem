@@ -10,7 +10,7 @@ public class Main {
 	 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		 
 		BigInteger A = new BigInteger(br.readLine());
-		BigInteger B = new BigInteger(br.readLine());
+		BigInteger B = new BigInteger(br.readLine());  
      
 		System.out.println(A.add(B));
 		System.out.println(A.subtract(B));

@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		   
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		     
+		       
 		int N = Integer.parseInt(br.readLine());
 		StringBuilder sb = new StringBuilder();
 		for(int i=N; i>=0; i--) {

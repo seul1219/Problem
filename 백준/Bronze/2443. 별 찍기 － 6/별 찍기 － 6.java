@@ -29,7 +29,7 @@ public class Main {
          for(int j=0; j<left; j++) {
 
            sb.append(" ");
-
+   
          }   
 
          for(int j=left; j<right; j++) {

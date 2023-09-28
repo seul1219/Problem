@@ -21,7 +21,7 @@ public class Main {
      int left = 0;
 
      int right = 2*N-1;
-
+   
      int end = 2*N-1;
 
      int mid = (2*N-1)/2;

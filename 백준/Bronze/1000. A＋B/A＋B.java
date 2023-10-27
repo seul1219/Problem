@@ -8,7 +8,7 @@ public class Main {
 		   
 		int A = sc.nextInt();
 		int B = sc.nextInt();
-		
+		   
 		System.out.println(A+B);
 	}  
 }

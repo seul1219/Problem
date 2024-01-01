@@ -1,29 +1,66 @@
-import java.util.Scanner;
+import java.io.*;
+
+import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		
-		int A = sc.nextInt();
-		int B = sc.nextInt();
-		int C = sc.nextInt();
-		
-		int N = sc.nextInt();
-		
-		int res = 0;
-		
-		for(int i=1; i<=50; i++) {
-			for(int j=1; j<=50; j++) {
-				for(int k=1; k<=50; k++) {
-					if(A*i + B*j + C*k == N) {
-						res = 1;
-					}
-				}
-			}
-		}
-		
-		System.out.println(res);
-	}
-}
+  
+
+   public static void main(String args[]) throws IOException { 
+
+     
+
+     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));     
+
+     StringTokenizer st = new StringTokenizer(br.readLine());
+
+     
+
+     int A = Integer.parseInt(st.nextToken());
+
+     int B = Integer.parseInt(st.nextToken());
+
+     int C = Integer.parseInt(st.nextToken());
+
+     int N = Integer.parseInt(st.nextToken());
+
+     
+
+     boolean flag = false;
+
+     R: for(int i=0; i<=300; i++) {
+
+       for(int j=0; j<=300; j++) {
+
+         for(int k=0; k<=300; k++) {
+
+           if(A*i + B*j + C*k == N) {
+
+             flag = true;
+
+             break R;
+
+           }
+
+         }
+
+       }
+
+     }
+
+     
+
+     if(flag) {
+
+       System.out.println(1);
+
+     } else {
+
+       System.out.println(0);
+
+     }    
+
+    }
+
+ }
+

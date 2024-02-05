@@ -1,46 +1,42 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Main {
 	
 	public static int N;
 	public static int M;
-	public static String[] arr;
-	public static String[] sel;
 	public static StringBuilder sb = new StringBuilder();
-
-	public static void main(String[] args) {
+	public static int[] sel;
+	
+	public static void main(String[] args) throws IOException {
 		
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
 		
-		N = sc.nextInt();
-		M = sc.nextInt();
-		
-		arr = new String[N];
-		for(int i=0; i<N; i++) {
-			arr[i] = String.valueOf(i+1);
-		}
-		
-		sel = new String[M];
-		
-		NM(0, 0);
+		sel = new int[M];
+		NM(0, 1);
 		
 		System.out.println(sb.toString());
-		
 	}
 	
-	public static void NM(int idx, int selidx) {
-	
-		if(selidx==M) {
+	public static void NM(int cnt, int start) {
+		
+		if(cnt==M) {
 			for(int i=0; i<M; i++) {
 				sb.append(sel[i]).append(" ");
 			}
 			sb.append("\n");
+			
 			return;
-		}
-		
-		for(int i=idx; i<=N-M+selidx; i++) {
-			sel[selidx] = arr[i];
-			NM(i+1, selidx+1);
+		} else {
+			for(int i=start; i<=N; i++) {
+					sel[cnt] = i;
+					NM(cnt+1, i+1);
+			}
 		}
 	}
 }

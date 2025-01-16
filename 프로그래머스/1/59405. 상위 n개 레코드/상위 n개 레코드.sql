@@ -1,0 +1,8 @@
+-- 코드를 입력하세요
+SELECT NAME FROM (
+    SELECT ROWNUM, A.* FROM (
+        SELECT * FROM ANIMAL_INS
+        ORDER BY DATETIME
+    ) A
+) R
+WHERE ROWNUM = 1;
